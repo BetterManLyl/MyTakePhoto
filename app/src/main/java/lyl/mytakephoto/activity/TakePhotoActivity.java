@@ -245,6 +245,8 @@ public class TakePhotoActivity extends BaseActivity implements CallBack {
 //        intent.setData(Uri.parse("tel:" + "18326897225"));
 //        intent.setDataAndType(Uri.parse("tel:" + "18326897225"), "");
         startActivity(intent);
+
+
     }
 
     /**
