@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--&lt;!&ndash;旋转&ndash;&gt;-->
+    <!--<rotate-->
+        <!--android:fromDegrees=""-->
+        <!--android:toDegrees="" />-->
+    <!--&lt;!&ndash;缩放&ndash;&gt;-->
+    <!--<scale-->
+        <!--android:fromXScale=""-->
+        <!--android:toXScale="" />-->
+    <!--&lt;!&ndash;平移&ndash;&gt;-->
+    <!--<translate-->
+        <!--android:fromXDelta=""-->
+        <!--android:toXDelta="" />-->
+
+    <!--&lt;!&ndash;透明度&ndash;&gt;-->
+    <!--<alpha-->
+        <!--android:fromAlpha=""-->
+        <!--android:toAlpha="" />-->
+</set>
+
+
+
