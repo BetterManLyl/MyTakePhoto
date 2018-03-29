@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/fre_two_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/tv_type_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="111"
+        android:layout_margin="10dp"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CENTER"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_center_crop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CENTER_CROP"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_focus_crop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FOCUS_CROP"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_center_inside"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CENTER_INSIDE"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_center_fit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FIT_CENTER"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_fit_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FIT_START"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_fit_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FIT_END"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_fit_xy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FIT_XY"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

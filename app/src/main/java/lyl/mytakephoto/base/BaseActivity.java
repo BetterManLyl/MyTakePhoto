@@ -30,25 +30,24 @@ public abstract class BaseActivity extends AppCompatActivity implements NetworkR
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
+        unbinder = ButterKnife.bind(this);
+        rxPermissions = new RxPermissions(this);
         ActivitiManager.addActivity(this);
         //MyUtils.setActivity(this);
         initView();
 
-        unbinder = ButterKnife.bind(this);
-        rxPermissions = new RxPermissions(this);
+
 
     }
 
     @Override
     public void netDisable() {
         initNet(0);
-        Toast.makeText(this, "不可用", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void netEnable() {
         initNet(1);
-        Toast.makeText(this, "可用", Toast.LENGTH_SHORT).show();
     }
 
     public void initNet(int type) {

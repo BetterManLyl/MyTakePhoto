@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -30,13 +30,22 @@ dependencies {
     //butterknife
     compile 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
-
     //非常齐全的工具类
     compile 'com.blankj:utilcode:1.12.0'
     compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
     //RxJava2
-    compile "io.reactivex.rxjava2:rxjava:2.0.0"
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2' // or 1.4-beta1
-    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2' // or 1.4-beta1
-    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2' // or 1.4-beta1
+    compile 'io.reactivex.rxjava2:rxjava:2.0.0'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    // or 1.4-beta1
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    // or 1.4-beta1
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    // or 1.4-beta1
+    //fresco加载图片的使用
+    compile 'com.facebook.fresco:fresco:0.14.0'
+    // 支持 GIF 动图，需要添加
+    compile 'com.facebook.fresco:animated-gif:0.14.0'
+    compile 'com.android.support:design:26.0.0-alpha1'
+
+    compile 'com.github.bumptech.glide:glide:3.7.0'
 }

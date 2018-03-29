@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/fre_three_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp" />
+
+
+    <Button
+        android:id="@+id/btn_load_gif_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="先加载低质量的图片，在加载高质量的图片" />
+
+    <Button
+        android:id="@+id/btn_load_gif_image_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载缩略图" />
+
+    <Button
+        android:id="@+id/btn_load_gif_image_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本地图片复用" />
+</LinearLayout>

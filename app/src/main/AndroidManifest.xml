@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".baseactivitytest.OneActivity"
+            android:name=".activity.fresco.FrescoActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,9 +27,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
+        <activity android:name=".MainActivity"/>
 
-            />
+        <activity android:name=".activity.fresco.FrescoOneActivity" />
+        <activity android:name=".activity.fresco.FrescoTwoActivity" />
+        <activity android:name=".activity.fresco.FrescoThreeActivity" />
+        <activity android:name=".activity.fresco.FrescoFourActivity" />
+        <activity android:name=".activity.fresco.FrescoFiveActivity"/>
+        <activity android:name=".activity.fresco.FrescoSixActivity"/>
+        <activity android:name=".activity.fresco.FrescoServenActivity"/>
+        <activity android:name=".activity.fresco.FrescoEightActivity"/>
+        <activity android:name=".activity.fresco.FrescoNineActivity"/>
+        <activity android:name=".activity.fresco.FrescoTenActivity"/>
 
         <activity android:name=".netwotk.NetworkActivity" />
 

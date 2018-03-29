@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simpleDraweeView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        fresco:placeholderImageScaleType="focusCrop"
+        fresco:roundedCornerRadius="10dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/btn_progress_fresco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载progress图片"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_fresco_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图片不同的裁剪方式"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_fresco_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置圆角和圆形图片"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_fresco_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="渐进式图片"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_fresco_04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载gif动画"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/btn_fresco_05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多图请求及图片复用"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/btn_fresco_06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图片加载的监听"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/btn_fresco_07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图片缩放和旋转"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_fresco_08"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改图片"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_fresco_09"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="动态加载图片"
+        android:textAllCaps="false" />
+</LinearLayout>

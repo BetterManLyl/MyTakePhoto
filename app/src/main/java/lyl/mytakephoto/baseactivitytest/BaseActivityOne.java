@@ -76,12 +76,10 @@ public abstract class BaseActivityOne extends AppCompatActivity implements Netwo
 
     @Override
     public void netDisable() {
-        Toast.makeText(this, "不可用", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void netEnable() {
-        Toast.makeText(this, "可用", Toast.LENGTH_SHORT).show();
     }
 
     private long currentSeconds=0;
