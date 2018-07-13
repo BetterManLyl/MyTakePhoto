@@ -31,8 +31,7 @@ public class FrescoTenActivity extends BaseActivity {
     public void onViewClicked() {
         linearLayout.removeAllViews();
         SimpleDraweeView simpleDraweeView = new SimpleDraweeView(this);
-        //设置宽高比
-
+        //设置宽高比，不设置的话，不会显示图片
         simpleDraweeView.setAspectRatio(2.0f);
         simpleDraweeView.setImageURI("http://img4.duitang.com/uploads/item/201211/24/20121124175330_ruKEK.jpeg");
         linearLayout.addView(simpleDraweeView);

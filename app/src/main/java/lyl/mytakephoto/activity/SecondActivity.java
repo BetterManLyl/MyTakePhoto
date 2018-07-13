@@ -4,14 +4,11 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
 
-import com.blankj.utilcode.util.ActivityUtils;
 import com.blankj.utilcode.util.LogUtils;
-import com.blankj.utilcode.util.Utils;
 
-import lyl.mytakephoto.MainActivity;
+import lyl.mylibrary.TestAar;
 import lyl.mytakephoto.R;
 import lyl.mytakephoto.base.BaseActivity;
-import lyl.mytakephoto.util.MyUtils;
 
 /**
  * @author lyl
@@ -44,6 +41,8 @@ public class SecondActivity extends BaseActivity {
     public void initView() {
         super.initView();
         exampleOne();
+        TestAar.toast("string");
+        setContentView(R.layout.my_library);
        // MyUtils.startActivity(MainActivity.class);
         // handler.postDelayed(new MyRun(), 2000);
         //   finish();

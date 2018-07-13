@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import com.bumptech.glide.Glide;
 import com.facebook.drawee.drawable.ProgressBarDrawable;
@@ -19,6 +20,7 @@ import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import lyl.mytakephoto.R;
@@ -43,6 +45,9 @@ public class FrescoActivity extends BaseActivity {
 
     private Context context;
     private MyAdapter myAdapter;
+//
+//    @BindView(R.id.ed)
+//    EditText editText;
 
     @Override
     protected int getLayoutId() {
@@ -97,8 +102,8 @@ public class FrescoActivity extends BaseActivity {
 
 
     @OnClick({R.id.btn_progress_fresco, R.id.btn_fresco_01, R.id.btn_fresco_02,
-            R.id.btn_fresco_03, R.id.btn_fresco_04,R.id.btn_fresco_05,R.id.btn_fresco_06,
-            R.id.btn_fresco_07,R.id.btn_fresco_08,R.id.btn_fresco_09})
+            R.id.btn_fresco_03, R.id.btn_fresco_04, R.id.btn_fresco_05, R.id.btn_fresco_06,
+            R.id.btn_fresco_07, R.id.btn_fresco_08, R.id.btn_fresco_09})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_progress_fresco:
@@ -129,7 +134,7 @@ public class FrescoActivity extends BaseActivity {
                 startActivity(new Intent(this, FrescoNineActivity.class));//修改图片
                 break;
             case R.id.btn_fresco_09:
-                startActivity(new Intent(this, FrescoTenActivity.class));//修改图片
+                startActivity(new Intent(this, FrescoTenActivity.class));//动态加载图片
                 break;
             default:
                 break;
